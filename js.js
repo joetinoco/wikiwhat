@@ -84,7 +84,7 @@ vi: "VN",
 zh: "CN"
 };
 
-// Adjusts the language combo according to the browser language
+// Adjust the language combo according to the browser language
 var userLang = navigator.language || navigator.userLanguage;
 userLang = userLang.split('-')[0];
 $( "#ddlLangFrom" ).val(userLang);

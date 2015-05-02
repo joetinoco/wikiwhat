@@ -7,29 +7,33 @@ http://www.colorcombos.com/color-schemes/124/ColorCombo124.html
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #C1DAD6;
+    background-image: url(images/handmade-paper.png);
 }
 
 #container {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    width: 70%;
-    height: 300px;
+    width: 80%;
+    height: 400px;
     background-color: #F5FAFA;
+    background-image: url(images/handmade-paper.png);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 #textFields {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    width: 800px;
-    height: 200px;
-    padding: 20px;
+    height: auto;
+    padding: 5%;
 }
 
 #leftColumn {
     float: left;
-    width: 500px;
+    width: 60%;
     margin: 10px 0;
 }
 
@@ -39,11 +43,12 @@ body {
 
 #rightColumn {
     float: left;
-    width: 250px;
+    width: 35%;
     margin: 10px 0;
     border-left: solid 1px;
     border-color: #6D929B;
     background-color: #F5FAFA;
+    background-image: url(images/handmade-paper.png);
 }
 
 select {
@@ -74,7 +79,7 @@ input {
 .resultItem {
     display: inline;
     float: left;
-    width: 260px;
+    width: 95%;
     height: 35px;
     margin-left: 15px;
     margin-bottom: 5px;
