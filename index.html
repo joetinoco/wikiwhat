@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+ * WikiWhat
+ * by Joseph Tinoco - Winter/spring 2015.
+-->
+<html>
+    <head>
+        <title>Wikiwhat?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'> <!-- Google Fonts -->
+
+    </head>
+<body>
+    <div id="container">
+        <div id="textFields">
+            <h1>Wikiwhat?</h1>
+            <p>Use Wikipedia to translate hard-to-find terms, from technical/medical words to movie names.</p>
+            <div id="ddls">
+            <select id="ddlLangFrom" onchange="clearTxtField();">
+                <option value='ar'>Arabic</option>
+                <option value='hy'>Armenian</option>
+                <option value='az'>Azerbaijani</option>
+                <option value='eu'>Basque</option>
+                <option value='bg'>Bulgarian</option>
+                <option value='ca'>Catalan</option>
+                <option value='ceb'>Cebuano</option>
+                <option value='zh'>Chinese</option>
+                <option value='hr'>Croatian</option>
+                <option value='cs'>Czech</option>
+                <option value='da'>Danish</option>
+                <option value='nl'>Dutch</option>
+                <option value='en'>English</option>
+                <option value='eo'>Esperanto</option>
+                <option value='et'>Estonian</option>
+                <option value='fi'>Finnish</option>
+                <option value='fr'>French</option>
+                <option value='gl'>Galician</option>
+                <option value='de'>German</option>
+                <option value='el'>Greek</option>
+                <option value='he'>Hebrew</option>
+                <option value='hi'>Hindi</option>
+                <option value='hu'>Hungarian</option>
+                <option value='id'>Indonesian</option>
+                <option value='it'>Italian</option>
+                <option value='ja'>Japanese</option>
+                <option value='kk'>Kazakh</option>
+                <option value='ko'>Korean</option>
+                <option value='la'>Latin</option>
+                <option value='lt'>Lithuanian</option>
+                <option value='ms'>Malay</option>
+                <option value='min'>Minangkabau</option>
+                <option value='no'>Norwegian (Bokmål)</option>
+                <option value='nn'>Norwegian (Nynorsk)</option>
+                <option value='fa'>Persian</option>
+                <option value='pl'>Polish</option>
+                <option value='pt'>Portuguese</option>
+                <option value='ro'>Romanian</option>
+                <option value='ru'>Russian</option>
+                <option value='sr'>Serbian</option>
+                <option value='sh'>Serbo-Croatian</option>
+                <option value='sk'>Slovak</option>
+                <option value='sl'>Slovenian</option>
+                <option value='es'>Spanish</option>
+                <option value='sv'>Swedish</option>
+                <option value='tr'>Turkish</option>
+                <option value='uk'>Ukrainian</option>
+                <option value='uz'>Uzbek</option>
+                <option value='vi'>Vietnamese</option>
+                <option value='vo'>Volapük</option>
+            </select> to <select id="ddlLangTo" onchange="retriggerSearch();">
+                <option value='ar'>Arabic</option>
+                <option value='hy'>Armenian</option>
+                <option value='az'>Azerbaijani</option>
+                <option value='eu'>Basque</option>
+                <option value='bg'>Bulgarian</option>
+                <option value='ca'>Catalan</option>
+                <option value='ceb'>Cebuano</option>
+                <option value='zh'>Chinese</option>
+                <option value='hr'>Croatian</option>
+                <option value='cs'>Czech</option>
+                <option value='da'>Danish</option>
+                <option value='nl'>Dutch</option>
+                <option value='en'>English</option>
+                <option value='eo'>Esperanto</option>
+                <option value='et'>Estonian</option>
+                <option value='fi'>Finnish</option>
+                <option value='fr'>French</option>
+                <option value='gl'>Galician</option>
+                <option value='de'>German</option>
+                <option value='el'>Greek</option>
+                <option value='he'>Hebrew</option>
+                <option value='hi'>Hindi</option>
+                <option value='hu'>Hungarian</option>
+                <option value='id'>Indonesian</option>
+                <option value='it'>Italian</option>
+                <option value='ja'>Japanese</option>
+                <option value='kk'>Kazakh</option>
+                <option value='ko'>Korean</option>
+                <option value='la'>Latin</option>
+                <option value='lt'>Lithuanian</option>
+                <option value='ms'>Malay</option>
+                <option value='min'>Minangkabau</option>
+                <option value='no'>Norwegian (Bokmål)</option>
+                <option value='nn'>Norwegian (Nynorsk)</option>
+                <option value='fa'>Persian</option>
+                <option value='pl'>Polish</option>
+                <option value='pt'>Portuguese</option>
+                <option value='ro'>Romanian</option>
+                <option value='ru'>Russian</option>
+                <option value='sr'>Serbian</option>
+                <option value='sh'>Serbo-Croatian</option>
+                <option value='sk'>Slovak</option>
+                <option value='sl'>Slovenian</option>
+                <option value='es'>Spanish</option>
+                <option value='sv'>Swedish</option>
+                <option value='tr'>Turkish</option>
+                <option value='uk'>Ukrainian</option>
+                <option value='uz'>Uzbek</option>
+                <option value='vi'>Vietnamese</option>
+                <option value='vo'>Volapük</option>
+            </select>
+            </div>
+            <div id="leftColumn">
+                <input id="txtField">
+                <div id="wikiSummary"><p>Try learning how to say "Trackpad" in french, or find out how the Fugu fish is called in Portuguese.</p></div>
+            </div>
+            <div id="rightColumn">
+                
+            </div>
+        </div>
+        <script src="js.js"></script>
+    </div>
+    <footer>by Joseph Tinoco. Flag icons from <a href="http://www.icondrawer.com/">Icondrawer</a>.</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2008275-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

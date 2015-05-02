@@ -1,0 +1,109 @@
+﻿/*
+
+http://www.colorcombos.com/color-schemes/124/ColorCombo124.html
+
+*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #C1DAD6;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 70%;
+    height: 300px;
+    background-color: #F5FAFA;
+}
+
+#textFields {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 800px;
+    height: 200px;
+    padding: 20px;
+}
+
+#leftColumn {
+    float: left;
+    width: 500px;
+    margin: 10px 0;
+}
+
+#leftColumn p {
+    padding: 0 15px;
+}
+
+#rightColumn {
+    float: left;
+    width: 250px;
+    margin: 10px 0;
+    border-left: solid 1px;
+    border-color: #6D929B;
+    background-color: #F5FAFA;
+}
+
+select {
+    font-family: inherit;
+    font-size: 15px;
+    margin: 10px 10px 0 0;
+}
+#ddlLangTo {
+    margin-left: 10px;
+}
+
+input {
+    font-family: inherit;
+    font-size: 22px;
+    width: 95%;
+    height: 30px;
+    margin: 10px 0 10px 0;
+}
+
+#wikiSummary {
+    font-size: 12px;
+}
+
+#wikiSummary h2 {
+    font-size: 22px;
+}
+
+.resultItem {
+    display: inline;
+    float: left;
+    width: 260px;
+    height: 35px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    font-size: 12px;
+}
+
+.resultItem img {
+    display: inline;
+    float: left;
+    padding-left: 3px;
+    padding-right: 10px;
+    border: none;
+}
+
+.resultItem a, .resultItem a:visited {
+    text-decoration: none;
+    color: #000000;    
+}
+
+.resultItem a:hover {
+    font-weight: bold; 
+}
+
+footer {
+    clear: both;
+    width: 98%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    
+}
