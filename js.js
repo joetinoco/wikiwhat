@@ -1,6 +1,11 @@
-/* 
+ /* 
+ *
  * WikiWhat Javascript/JQuery source
  * by Joseph Tinoco - Winter/spring 2015
+ * 
+ * This code is free to use and derive code from (as long as the source is disclosed),
+ * under the terms of the GNU General Public License v2.0.
+ *
  */
 
 // List of languages and countries (for the flags)
