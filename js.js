@@ -265,7 +265,7 @@ $( "#txtField" ).autocomplete({
         });
         },
         minLength: 3,
-        delay: 200,
+        delay: 300,
         // This callback does the rest of the functionality
         select: function( event, ui ){
             retrieveLanguages(event,ui);
