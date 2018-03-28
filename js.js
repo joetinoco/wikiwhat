@@ -149,7 +149,7 @@ function retrieveLanguages (event, ui) {
         searchTerm = ui.item.label;
     else searchTerm = $( "#txtField" ).val();
     // Retrieves the list of every available translation of this article
-    $.getJSON("http://" + $( "#ddlLangFrom" ).val() + ".wikipedia.org/w/api.php?action=parse&format=json&redirects&callback=?",
+    $.getJSON("https://" + $( "#ddlLangFrom" ).val() + ".wikipedia.org/w/api.php?action=parse&format=json&redirects&callback=?",
         {page:searchTerm, prop:"langlinks"}, 
         function( data ) {
             languages = data.parse.langlinks;
@@ -265,7 +265,7 @@ $( "#txtField" ).autocomplete({
         });
         },
         minLength: 3,
-        delay: 300,
+        delay: 200,
         // This callback does the rest of the functionality
         select: function( event, ui ){
             retrieveLanguages(event,ui);
